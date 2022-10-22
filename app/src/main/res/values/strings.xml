@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Noustea</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">@string/nav_header_desc</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_viewport">Model</string>
+    <string name="menu_dily">Seznam dílů</string>
+    <string name="menu_sol">Solární panely</string>
+    <string name="menu_rad">Radiátory</string>
+    <string name="menu_ring">Ring</string>
+    <string name="menu_strany">Postranní moduly</string>
+    <string name="menu_celek">Celek</string>
+    <string name="menu_group_info">Informace</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

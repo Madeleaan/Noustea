@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_viewport">
+    <fragment
+        android:id="@+id/nav_viewport"
+        android:name="madeleaan.noustea.ui.viewport.ViewportFragment"
+        android:label="@string/menu_viewport"
+        tools:layout="@layout/fragment_viewport" />
+    <fragment
+        android:id="@+id/nav_dily"
+        android:name="madeleaan.noustea.ui.dily.DilyFragment"
+        android:label="@string/menu_dily"
+        tools:layout="@layout/fragment_dily" />
+
+    <fragment
+        android:id="@+id/nav_sol"
+        android:name="madeleaan.noustea.ui.sol.SolFragment"
+        android:label="@string/menu_sol"
+        tools:layout="@layout/fragment_sol" />
+    <fragment
+        android:id="@+id/nav_rad"
+        android:name="madeleaan.noustea.ui.rad.RadFragment"
+        android:label="@string/menu_rad"
+        tools:layout="@layout/fragment_rad" />
+    <fragment
+        android:id="@+id/nav_ring"
+        android:name="madeleaan.noustea.ui.ring.RingFragment"
+        android:label="@string/menu_ring"
+        tools:layout="@layout/fragment_ring" />
+    <fragment
+        android:id="@+id/nav_strany"
+        android:name="madeleaan.noustea.ui.strany.StranyFragment"
+        android:label="@string/menu_strany"
+        tools:layout="@layout/fragment_strany" />
+    <fragment
+        android:id="@+id/nav_celek"
+        android:name="madeleaan.noustea.ui.celek.CelekFragment"
+        android:label="@string/menu_celek"
+        tools:layout="@layout/fragment_celek" />
+</navigation>
