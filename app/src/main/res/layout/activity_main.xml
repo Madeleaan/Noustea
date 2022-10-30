@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <include
-        layout="@layout/app_bar_main"
+        layout="@layout/bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
@@ -34,7 +34,7 @@
         android:clipToPadding="false"
         app:itemTextColor="@color/white"
         app:itemIconTint="@color/purple_200"
-        app:headerLayout="@layout/nav_header_main"
-        app:menu="@menu/activity_main_drawer" />
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu_drawer" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
