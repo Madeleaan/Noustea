@@ -43,8 +43,8 @@ class SolFragment: Fragment() {
 
     private fun makeRequest(url: String) {
         val req = StringRequest(Request.Method.GET, url,
-            { response -> curView.findViewById<TextView>(R.id.test).text = response},
-            { response -> curView.findViewById<TextView>(R.id.test).text = response.toString()})
+            { response -> curView.findViewById<TextView>(R.id.pi_debug).text = response},
+            { response -> curView.findViewById<TextView>(R.id.pi_debug).text = response.toString()})
         println("Sending a request to $url")
         Volley.newRequestQueue(context).add(req)
     }
@@ -59,15 +59,15 @@ class SolFragment: Fragment() {
             }
         }
         if(pi1 == "") {
-            curView.findViewById<TextView>(R.id.pi1_status).text = "Pi 1: Offline"
+            curView.findViewById<TextView>(R.id.pi1_status).text = getString(R.string.pi1_offline)
             curView.findViewById<TextView>(R.id.pi1_status).setTextColor(Color.RED)
             return
         }
 
         val req = StringRequest(Request.Method.GET, "http://$pi1",
-            { response -> curView.findViewById<TextView>(R.id.pi1_status).text = "Pi 1: Online"
+            { _ -> curView.findViewById<TextView>(R.id.pi1_status).text = getString(R.string.pi1_online)
             curView.findViewById<TextView>(R.id.pi1_status).setTextColor(Color.GREEN)},
-            { response -> curView.findViewById<TextView>(R.id.pi1_status).text = "Pi 1: Offline"
+            { _ -> curView.findViewById<TextView>(R.id.pi1_status).text = getString(R.string.pi1_offline)
                 curView.findViewById<TextView>(R.id.pi1_status).setTextColor(Color.RED)})
         Volley.newRequestQueue(context).add(req)
     }

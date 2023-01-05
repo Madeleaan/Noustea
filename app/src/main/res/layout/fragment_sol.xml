@@ -13,30 +13,31 @@
             android:textStyle="bold"
             android:textSize="35sp"/>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="400sp"
+            android:layout_height="100sp"
             android:id="@+id/button_refresh"
             android:text="Refresh"
-            android:textSize="20sp"/>
+            android:textSize="60sp"/>
         <Space
             android:layout_width="wrap_content"
             android:layout_height="50sp" />
         <Button
             android:id="@+id/button_on"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ON" />
+            android:layout_width="400sp"
+            android:layout_height="100sp"
+            android:text="ON"
+            android:textSize="60sp"/>
         <Button
             android:id="@+id/button_off"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OFF" />
+            android:layout_width="400sp"
+            android:layout_height="100sp"
+            android:text="OFF"
+            android:textSize="60sp"/>
         <Space
             android:layout_width="wrap_content"
             android:layout_height="50sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/test"
-            android:text="sadkhaskdh" />
+            android:id="@+id/pi_debug" />
 </LinearLayout>

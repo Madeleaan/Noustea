@@ -23,4 +23,9 @@
     <string name="info_efektivita">Efektivita: </string>
     <string name="info_typ">Typ: </string>
     <string name="info_popis">Popis: </string>
+
+    <string name="pi1_online">Pi 1: Online</string>
+    <string name="pi1_offline">Pi 1: Offline</string>
+    <string name="pi2_online">Pi 2: Online</string>
+    <string name="pi2_offline">Pi 2: Offline</string>
 </resources>
