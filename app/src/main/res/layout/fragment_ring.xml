@@ -23,12 +23,30 @@
             android:text="@string/info_zrychleni"
             android:textSize="30sp"
             android:padding="50sp"/>
-        <TextView
-            android:layout_width="wrap_content"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginHorizontal="50sp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/info_hmotnost"
-            android:textSize="30sp"
-            android:padding="50sp"/>
+            android:orientation="horizontal">
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="400sp"
+                android:layout_height="400sp"
+                android:src="@drawable/ani_ring"
+                android:id="@+id/ring_ani"
+                android:layout_gravity="start"/>
+
+            <SeekBar
+                android:id="@+id/ring_speed"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:rotation="270" />
+        </FrameLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -41,43 +59,37 @@
             android:id="@+id/ring_col_prev"
             android:layout_width="300sp"
             android:layout_height="100sp"
-            android:layout_marginBottom="25sp"/>
+            android:layout_marginBottom="25sp" />
 
         <SeekBar
             android:id="@+id/ring_col_red"
             android:layout_width="400sp"
             android:layout_height="wrap_content"
             android:layout_margin="25sp"
-            android:progressTint="#FF0000"
             android:max="255"
-            />
+            android:progressTint="#FF0000" />
+
         <SeekBar
             android:id="@+id/ring_col_green"
             android:layout_width="400sp"
             android:layout_height="wrap_content"
             android:layout_margin="25sp"
-            android:progressTint="#00FF00"
-            android:max="255"/>
+            android:max="255"
+            android:progressTint="#00FF00" />
+
         <SeekBar
             android:id="@+id/ring_col_blue"
             android:layout_width="400sp"
             android:layout_height="wrap_content"
             android:layout_margin="25sp"
-            android:progressTint="#0000FF"
-            android:max="255"/>
-        <SeekBar
-            android:id="@+id/ring_col_alpha"
-            android:layout_width="400sp"
-            android:layout_height="wrap_content"
-            android:layout_margin="25sp"
-            android:progressTint="#FFFFFF"
-            android:max="255"/>
+            android:max="255"
+            android:progressTint="#0000FF" />
 
         <Button
             android:layout_width="300sp"
             android:layout_height="75sp"
+            android:backgroundTint="#4A00E0"
             android:text="@string/col_apply"
-            android:textSize="20sp"
-            android:backgroundTint="#4A00E0"/>
+            android:textSize="20sp" />
     </LinearLayout>
 </LinearLayout>
