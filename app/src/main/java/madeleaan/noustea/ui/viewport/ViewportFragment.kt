@@ -21,10 +21,10 @@ class ViewportFragment: Fragment() {
         curView =  inflater.inflate(R.layout.fragment_viewport, container, false)
         curView.findViewById<GifImageView>(R.id.viewport_rad_down).setImageDrawable(GifDrawable(resources, R.drawable.ani_rad_down).also { it.setSpeed(0.8f) })
         curView.findViewById<GifImageView>(R.id.viewport_rad_up).setImageDrawable(GifDrawable(resources, R.drawable.ani_rad_up).also { it.setSpeed(0.8f) })
-        curView.findViewById<GifImageView>(R.id.viewport_sol_down).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_down).also { it.setSpeed(0.8f) })
-        curView.findViewById<GifImageView>(R.id.viewport_sol_down_back).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_down_back).also { it.setSpeed(0.8f) })
-        curView.findViewById<GifImageView>(R.id.viewport_sol_up).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_up).also { it.setSpeed(0.8f) })
-        curView.findViewById<GifImageView>(R.id.viewport_sol_up_back).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_up_back).also { it.setSpeed(0.8f) })
+        curView.findViewById<GifImageView>(R.id.viewport_sol_down).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_front_down).also { it.setSpeed(0.8f) })
+        curView.findViewById<GifImageView>(R.id.viewport_sol_down_back).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_back_down).also { it.setSpeed(0.8f) })
+        curView.findViewById<GifImageView>(R.id.viewport_sol_up).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_front_up).also { it.setSpeed(0.8f) })
+        curView.findViewById<GifImageView>(R.id.viewport_sol_up_back).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_back_up).also { it.setSpeed(0.8f) })
 
         return curView
     }
