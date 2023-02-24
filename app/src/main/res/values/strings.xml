@@ -1,9 +1,12 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
     <string name="app_name">Noustea</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">@string/nav_header_desc</string>
     <string name="nav_header_desc">Navigation header</string>
+
+    <string name="preferences_file_key">noustea.PREFERENCES</string>
 
     <string name="menu_viewport">Model</string>
     <string name="menu_dily">Seznam dílů</string>
@@ -23,9 +26,25 @@
     <string name="info_efektivita">Efektivita: </string>
     <string name="info_typ">Typ: </string>
     <string name="info_popis">Popis: </string>
+    <string name="info"> Informace </string>
 
     <string name="pi1_online">Pi 1: Online</string>
     <string name="pi1_offline">Pi 1: Offline</string>
     <string name="pi2_online">Pi 2: Online</string>
     <string name="pi2_offline">Pi 2: Offline</string>
+    <string name="refresh">Obnovit</string>
+    <string name="module_placeholder_type">Type of the module</string>
+    <string name="module_placeholder_desc">Description of the module</string>
+    <string name="module_placeholder_mass">Mass of the module</string>
+
+    <string-array name="colors_array">
+        <item>Vypnuto</item>
+        <item>Zapnuto</item>
+        <item>Červená</item>
+        <item>Zelená</item>
+        <item>Modrá</item>
+        <item>Azurová</item>
+        <item>Purpurová</item>
+        <item>Žlutá</item>
+    </string-array>
 </resources>

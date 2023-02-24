@@ -1,16 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_width="match_parent"
+    tools:ignore="ContentDescription"
+    android:layout_marginTop="?attr/actionBarSize">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/strany_base"
+        android:scaleX="0.75"
+        android:scaleY="0.75"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/strany_up_left"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:id="@+id/module_img_3" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/strany_up_right"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:id="@+id/module_img_2" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/strany_down_left"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:id="@+id/module_img_4" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/strany_down_right"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:id="@+id/module_img_1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:baselineAligned="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/strany_corner_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:alpha="0.3"
+                    android:src="@drawable/trimmed_up_left"
+                    tools:ignore="ImageContrastCheck" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50sp"
+                    android:layout_toEndOf="@id/strany_corner_3"
+                    android:text="@string/info"
+                    android:textSize="40sp"
+                    tools:ignore="DuplicateSpeakableTextCheck"
+                    android:id="@+id/strany_btn_3"
+                    android:paddingHorizontal="20sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/strany_corner_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:alpha="0.3"
+                    android:src="@drawable/trimmed_up_right"
+                    tools:ignore="ImageContrastCheck,ImageContrastCheck" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info"
+                    android:textSize="40sp"
+                    android:layout_toStartOf="@id/strany_corner_2"
+                    android:layout_marginTop="50sp"
+                    android:id="@+id/strany_btn_2"
+                    android:paddingHorizontal="20sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:baselineAligned="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/strany_corner_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:alpha="0.3"
+                    android:src="@drawable/trimmed_down_left"
+                    tools:ignore="ImageContrastCheck" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info"
+                    android:textSize="40sp"
+                    android:layout_toEndOf="@id/strany_corner_4"
+                    android:layout_marginBottom="50sp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/strany_btn_4"
+                    android:paddingHorizontal="20sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/strany_corner_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="30sp"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginEnd="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:alpha="0.3"
+                    android:src="@drawable/trimmed_down_right"
+                    tools:ignore="ImageContrastCheck" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info"
+                    android:textSize="40sp"
+                    android:layout_toStartOf="@id/strany_corner_1"
+                    android:layout_marginBottom="50sp"
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/strany_btn_1"
+                    android:paddingHorizontal="20sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:text="@string/menu_strany"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_gravity="center|bottom"
+        android:layout_margin="60sp"
+        android:backgroundTint="#4A00E0"
+        android:contentDescription="@string/refresh"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/icon_refresh"
+        android:tint="#FFFFFF"
+        android:id="@+id/strany_fab"/>
+</FrameLayout>

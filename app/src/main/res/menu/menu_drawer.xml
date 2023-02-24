@@ -8,10 +8,6 @@
             android:id="@+id/nav_viewport"
             android:icon="@drawable/ic_nav_viewport"
             android:title="@string/menu_viewport" />
-        <item
-            android:id="@+id/nav_dily"
-            android:icon="@drawable/ic_nav_dily"
-            android:title="@string/menu_dily" />
     </group>
 
     <item android:title="@string/menu_group_info">
@@ -33,10 +29,6 @@
                     android:id="@+id/nav_strany"
                     android:icon="@drawable/ic_nav_strany"
                     android:title="@string/menu_strany" />
-                <item
-                    android:id="@+id/nav_celek"
-                    android:icon="@drawable/ic_nav_celek"
-                    android:title="@string/menu_celek" />
             </group>
         </menu>
     </item>

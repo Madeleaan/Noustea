@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
@@ -27,8 +26,23 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ani_command"
-        android:id="@+id/viewport_command" />
+        android:src="@drawable/module_fl"
+        android:id="@+id/viewport_module_fl"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/module_fr"
+        android:id="@+id/viewport_module_fr"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/module_bl"
+        android:id="@+id/viewport_module_bl"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/module_br"
+        android:id="@+id/viewport_module_br"/>
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -44,4 +58,14 @@
         android:layout_height="match_parent"
         android:src="@drawable/ani_sol_back_up"
         android:id="@+id/viewport_sol_up_back" />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ani_ring"
+        android:id="@+id/viewport_ring"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ani_command"
+        android:id="@+id/viewport_command" />
 </FrameLayout>

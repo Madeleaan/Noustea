@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
@@ -28,24 +29,23 @@
             android:layout_height="1dp"
             android:background="@android:color/darker_gray"
             android:layout_marginHorizontal="50sp"/>
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <pl.droidsonroids.gif.GifImageView
-                android:layout_width="400sp"
-                android:layout_height="400sp"
-                android:src="@drawable/ani_ring"
-                android:id="@+id/ring_ani"
-                android:layout_gravity="start"/>
-
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30sp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_speed"
+                app:tint="#FFFFFF"
+                android:paddingHorizontal="20sp"/>
             <SeekBar
                 android:id="@+id/ring_speed"
                 android:layout_width="300sp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center_vertical"
-                android:rotation="270" />
-        </FrameLayout>
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -54,7 +54,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_weight=".1">
+        android:layout_weight=".1"
+        android:visibility="gone">
         <Button
             android:id="@+id/ring_col_prev"
             android:layout_width="300sp"

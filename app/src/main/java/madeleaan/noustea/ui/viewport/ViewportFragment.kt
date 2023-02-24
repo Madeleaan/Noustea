@@ -25,6 +25,7 @@ class ViewportFragment: Fragment() {
         curView.findViewById<GifImageView>(R.id.viewport_sol_down_back).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_back_down).also { it.setSpeed(0.8f) })
         curView.findViewById<GifImageView>(R.id.viewport_sol_up).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_front_up).also { it.setSpeed(0.8f) })
         curView.findViewById<GifImageView>(R.id.viewport_sol_up_back).setImageDrawable(GifDrawable(resources, R.drawable.ani_sol_back_up).also { it.setSpeed(0.8f) })
+        curView.findViewById<GifImageView>(R.id.viewport_ring).setImageDrawable(GifDrawable(resources, R.drawable.ani_ring).also { it.setSpeed(0.8f) })
 
         return curView
     }
