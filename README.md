@@ -1,9 +1,15 @@
+
 # Noustea
-Tento repozitář slouží jako úložiště kódu pro aplikaci a backend k modelu, který má demonstrovat projekt **NOUSTEA**.
+Tento repozitář slouží jako úložiště kódu pro aplikaci a backend k modelu, který má demonstrovat projekt **NOUSTEA**. 
+
+[Složka s aplikací](/app/src/main)
+[Soubor s backendem](BACKEND.py)
 
 ## Aplikace
 Aplikace je napsána v programovacím jazyce [Kotlin](https://kotlinlang.org/). Ten byl vyvinut českou společností [JetBrains](https://www.jetbrains.com/) jako modernější verze programovacího jazyka Java, a v roce 2019 bylo na konferenci Google I/O [oznámeno, že se stává oficiálním vývojovým jazykem pro Android](https://android-developers.googleblog.com/2017/05/google-io-2017-empowering-developers-to.html). Aplikace tedy podporuje pouze operační systém Android a byla naprogramována v programu [Android Studio](https://developer.android.com/studio). Není přizpůsobena na jiná zařízení než se kterými jsme pracovali (Raspberry Pi Pico W a Samsung Galaxy Tab 4). Nachází se v ní pohyblivý model celé lodi, který je rozdělený na jednotlivé animace, takže se dá u jednotlivých animací změnit rychlost, nebo je úplně zastavit. Dále se zde dá najít například ovládání motorů na modelu, které dokáží pohybovat s solárními panely, radiátory nebo gravitačním habitatem (ring). Má také samostatnou záložku na moduly, kde je vidět ve kterých místech jsou moduly připojeny. U každého se také dá ovládat barva LED žárovek a k odlišení i napsat název, popisek a hmotnost modulu. 
+
 ![Ukázka menu](https://i.imgur.com/hKCBdIJ.png)
+
 *Menu aplikace*
 
 ![Ukázka obrazovky pro moduly](https://i.imgur.com/JAkXEam.png)
