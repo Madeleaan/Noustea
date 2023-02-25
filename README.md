@@ -3,6 +3,7 @@
 Tento repozitář slouží jako úložiště kódu pro aplikaci a backend k modelu, který má demonstrovat projekt **NOUSTEA**. 
 
 [Složka s aplikací](/app/src/main)
+
 [Soubor s backendem](BACKEND.py)
 
 ## Aplikace
